@@ -1,7 +1,5 @@
 import java.util.HashMap;
 
-import javax.print.DocFlavor.STRING;
-
 public class string_compression_02 {
     public static void compressString(String s) {
         HashMap<Character, Integer> map = new HashMap<>();
