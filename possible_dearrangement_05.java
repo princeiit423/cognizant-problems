@@ -11,7 +11,7 @@ public class possible_dearrangement_05 {
     }
 
     public static void main(String[] args) {
-        int n = 4;
+        int n = 5;
         System.out.println(findDearangment(n));
     }
 }
