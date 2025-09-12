@@ -21,7 +21,7 @@ public class findPyramidSum_08 {
         // input = 3
         // output= 1+5+11=17
 
-        int n = 2;
+        int n = 3;
         findSum(n);
 
     }
