@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Practice</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style> 
+            .container{
+                display:flex;
+                justify-content:center;
+                border-radius:20px;
+                border: 1px solid red;
+                
+            }
+            .img1,.img2{
+                margin:30px;
+                border: 1px solid blue;
+                border-radius:50px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <img id="img" class="img1" src="https://imgs.search.brave.com/6YM97xURIxR9L88USL6Yqd5eXlbxZS86Ybvq2GUgt1Y/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAxLzAyLzYyLzgx/LzM2MF9GXzEwMjYy/ODE1NV9aUGlBYU5F/RFJTWlUyUzBMQWti/Y2d2d0x5TW1yOWMy/WS5qcGc">
+        <img id="img" class="img2" src="https://imgs.search.brave.com/sZ1ZpclhyMsEvG6cRlKWimdTDMlEOOX-yu6Dj4w2OC8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTMy/Nzk1OTE0OS9waG90/by90YWJieS1zaG9y/dGhhaXItY2F0LWxv/b2tpbmctYXQtY2Ft/ZXJhLWFuZ3J5LW9u/LWdyYXktYmFja2dy/b3VuZC5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9bFNuUkpS/cFQyVmJva214Sm13/X3VwaXUyTTg4MnZ6/MTNCTDVBQW1Ka01H/az0">    
+        </div>
+        <script>
+let hoverImages = document.querySelectorAll(".img1, .img2");
+
+hoverImages.forEach((image) => {
+  image.addEventListener("mouseover", (event) => {
+    event.target.style.border = "2px solid green";
+  });
+});
+</script>
+    </body>
+</html>
