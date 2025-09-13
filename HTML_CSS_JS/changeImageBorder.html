@@ -31,8 +31,14 @@
 let hoverImages = document.querySelectorAll(".img1, .img2");
 
 hoverImages.forEach((image) => {
+  // When mouse enters → green border
   image.addEventListener("mouseover", (event) => {
-    event.target.style.border = "2px solid green";
+    event.target.style.border = "10px solid green";
+  });
+
+  // When mouse leaves → blue border (original)
+  image.addEventListener("mouseout", (event) => {
+    event.target.style.border = "10px solid blue";
   });
 });
 </script>
