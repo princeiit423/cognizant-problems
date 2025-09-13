@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style> 
+            .tab{
+                border:none;
+                padding:10px;
+                background:none;
+            }
+            .tab-container{
+                display: flex;
+                gap:10px;
+            }
+            .active{
+                border-bottom: 3px solid #4a90e2;
+                font-weight:bold;
+            }
+            .tab-data{
+                display:none;
+            }
+            .active-content{
+                display:block;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="tab-container">
+            <button class="tab active" data-tab="tab1" onClick="switchTab(event)">Tab1</button>
+            <button class="tab" data-tab="tab2" onClick="switchTab(event)">Tab2</button>
+            <button class="tab" data-tab="tab3" onClick="switchTab(event)">Tab3</button>
+        </div>
+        <div> 
+            <div class="tab-data active-content"> This data from tab1</div>
+            <div class="tab-data"> This data from tab1</div>
+            <div class="tab-data"> This data from tab1</div>
+        </div>
+        
+        <script>
+            function switchTab(event){
+                let clikedBtn= event.currentTarget;
+                let targetTab= clickedBtn.getAttribute("tab-data");
+
+                document.querySelectorAll(".tab").forEach(btn=>btn.classList.remove(".active"))
+            }
+        </script>
+    </body>
+</html>
