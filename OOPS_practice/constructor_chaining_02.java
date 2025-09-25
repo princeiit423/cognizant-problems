@@ -10,7 +10,8 @@ public class constructor_chaining_02 {
             cNum = 896124907;
         }
 
-        // setter function
+        // setter function conventionaly used class name but we can also used another
+        // name
         Customer(int cId, String cName, long cNum) {
             this(); // used for cunstroctor chaining in local
             // this.cId = cId;
