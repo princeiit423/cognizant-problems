@@ -43,7 +43,7 @@ class Test2 extends Test1 {
 
 public class constructor_chain_inheritance_05 {
     public static void main(String[] args) {
-        Test2 t2 = new Test2();
+        Test2 t2 = new Test2(45, 46);
         t2.disp();
     }
 }
