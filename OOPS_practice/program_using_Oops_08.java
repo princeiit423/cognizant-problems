@@ -50,7 +50,7 @@ class Rectangle extends Shape {
     }
 }
 
-class Permit {
+class Permit { // do this for polymorphism
     public void allow(Shape ref) {
         ref.getInput();
         ref.calcArea();
